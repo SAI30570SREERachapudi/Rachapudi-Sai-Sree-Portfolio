@@ -31,10 +31,10 @@ export const Footer = () => {
 
           <ul className="footer-links" aria-label="Social and Profile Links">
             <li>
-              <a 
-                href={personal.github} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href={personal.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="footer-link"
                 aria-label="GitHub Profile"
               >
@@ -43,10 +43,10 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a 
-                href={personal.linkedin} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href={personal.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="footer-link"
                 aria-label="LinkedIn Profile"
               >
@@ -55,8 +55,8 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a 
-                href={`mailto:${personal.email}`} 
+              <a
+                href={`mailto:${personal.email}`}
                 className="footer-link"
                 aria-label="Send Email"
               >
@@ -68,12 +68,10 @@ export const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <div>
-            © {currentYear} {personal.name}. Built with React &amp; Vite. Hosted on GitHub Pages.
-          </div>
 
-          <button 
-            onClick={scrollToTop} 
+
+          <button
+            onClick={scrollToTop}
             className="back-to-top-btn"
             aria-label="Scroll back to top of page"
           >
