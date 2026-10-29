@@ -192,26 +192,6 @@ export const portfolioData = {
       svgIcon: "agent"
     },
     {
-      id: "mlops-cicd",
-      title: "MLOps CI/CD Pipeline",
-      tagline: "Automated Machine Learning Lifecycle, Drift Detection & Canary Deployments",
-      status: "Completed",
-      featured: true,
-      category: "MLOps & CI/CD",
-      badgeColor: "burgundy",
-      problem: "Production machine learning models frequently degrade over time from subtle data drift and prediction divergence without automated validation gates and continuous monitoring.",
-      contribution: "Implemented an end-to-end MLOps pipeline covering automated model training (train.py), rigorous multi-stage validation (validate.py), data and prediction drift detection (drift_detect.py), and continuous production monitoring (monitor.py). Configured GitHub Actions workflows (ci_pipeline.yml, cd_deploy.yml) with automated canary deployment strategies and retraining triggers.",
-      technologies: ["Python", "Scikit-Learn", "NumPy", "GitHub Actions", "CI/CD Automation", "Canary Deployment"],
-      repoUrl: "https://github.com/SAI30570SREERachapudi/MLOpsCICD",
-      highlights: [
-        "Automated data and prediction drift detection",
-        "Multi-stage GitHub Actions CI/CD workflows",
-        "Automated canary deployment gates",
-        "Scheduled production monitoring and retraining"
-      ],
-      svgIcon: "pipeline"
-    },
-    {
       id: "leaselinker-aws",
       title: "LeaseLinker AWS Deployment",
       tagline: "Cloud-Deployed Property & Lease Management Infrastructure",
@@ -271,10 +251,6 @@ export const portfolioData = {
       ],
       svgIcon: "cart"
     }
-  ],
-
-  prototypesNote: {
-    title: "Specialized Algorithmic Investigations",
-    content: "Algorithmic investigations (including financial fraud explainability services with guardrails and credit score evaluators) represent specialized prototypes and internal experiments that directly inform my backend and explainability design principles."
-  }
+  ]
 };
+

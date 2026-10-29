@@ -6,7 +6,6 @@ import {
   Cloud, 
   ShieldCheck, 
   ShoppingCart,
-  Lightbulb,
   CheckCircle2,
   ArrowRight
 } from 'lucide-react';
@@ -14,7 +13,7 @@ import { GithubIcon } from './Icons';
 import { portfolioData } from '../data/portfolioData';
 
 export const Projects = () => {
-  const { projects, prototypesNote } = portfolioData;
+  const { projects } = portfolioData;
   const [filter, setFilter] = useState('all');
 
   const filterOptions = [
@@ -22,12 +21,13 @@ export const Projects = () => {
     { id: 'featured', label: 'Featured' },
     { id: 'Agentic AI', label: 'Agentic AI' },
     { id: 'Cloud & Backend', label: 'Cloud & Backend' },
-    { id: 'MLOps & CI/CD', label: 'MLOps & DevOps' }
+    { id: 'Full-Stack', label: 'Full-Stack' }
   ];
 
   const filteredProjects = projects.filter(project => {
     if (filter === 'all') return true;
     if (filter === 'featured') return project.featured;
+    if (filter === 'Full-Stack') return project.category.includes('Full-Stack');
     return project.category === filter;
   });
 
@@ -172,17 +172,6 @@ export const Projects = () => {
               </div>
             </article>
           ))}
-        </div>
-
-        {/* Specialized Algorithmic Prototype Note */}
-        <div className="prototype-callout">
-          <div className="prototype-icon">
-            <Lightbulb size={24} />
-          </div>
-          <div className="prototype-content">
-            <h4>{prototypesNote.title}</h4>
-            <p>{prototypesNote.content}</p>
-          </div>
         </div>
       </div>
     </section>

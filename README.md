@@ -114,7 +114,7 @@ Rachapudi-Sai-Sree-Portfolio/
 │   │   ├── About.jsx             # First-person bio, quick facts, and engineering pillars
 │   │   ├── Experience.jsx        # Verified Calibo AI Engineer Intern showcase
 │   │   ├── Skills.jsx            # Categorized skills matrix with interactive filter
-│   │   ├── Projects.jsx          # Verified software projects & prototype case studies
+│   │   ├── Projects.jsx          # Verified software projects (Auto-PPT-Agent, LeaseLinker, InsurAI, FreshMart)
 │   │   ├── Education.jsx         # K L University degree, CGPA 9.82, and distinctions
 │   │   ├── Contact.jsx           # Direct mailto links, copy-to-clipboard, mail templates
 │   │   └── Footer.jsx            # Minimalist footer with dynamic year and back-to-top
